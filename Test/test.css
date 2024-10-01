@@ -110,3 +110,11 @@ body {
     border: 2px solid var(--primary);
     background: var(--dropzone-over);
 }
+
+.fie-drop-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
