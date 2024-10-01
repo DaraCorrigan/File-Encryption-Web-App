@@ -16,7 +16,7 @@
     --headline: #211e30;
     --text: #0a090c;
     --primary-text: #f2f7fe;
-    --file-drop-over: #f2f7fe;
+    --file-drop-hover: #f2f7fe;
 }
 
 body {
@@ -84,4 +84,29 @@ body {
 
 .file-drop-area .file-information {
     font-size: 1.1rem;
+}
+
+.file-drop-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.file-drop-area .upload-file-icon i {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    color: var(--headline);
+}
+
+.file-drop-area:hover {
+    background: var(--file-drop-hover);
+}
+
+.file-drop--hover {
+    border: 2px solid var(--primary);
+    background: var(--dropzone-over);
 }
