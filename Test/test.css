@@ -143,3 +143,8 @@ body {
     border: 1px solid var(--file-drop-border);
     transition: all 0.3s ease;
 }
+
+.file-drop-actions button[type='cancel']:hover {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
