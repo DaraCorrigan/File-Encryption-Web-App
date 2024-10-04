@@ -119,7 +119,7 @@ body {
     gap: 1rem;
 }
 
-.fil-drop-actions button {
+.file-drop-actions button {
     flex-grow: 1;
     min-height: 3rem;
     font-size: 1.2rem;
@@ -133,3 +133,5 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+
+.
