@@ -134,4 +134,12 @@ body {
     gap: 0.5rem;
 }
 
-.
+.file-drop-actions button[type='cancel'] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--text);
+    background: var(--secondary);
+    cursor: pointer;
+    border: 1px solid var(--file-drop-border);
+    transition: all 0.3s ease;
+}
