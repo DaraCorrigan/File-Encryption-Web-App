@@ -148,3 +148,16 @@ body {
     border: 1px solid var(--primary);
     color: var(--primary);
 }
+
+.file-drop-actions button[type='submit'] {
+    background: var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--primary-text);
+    border: none;
+    cursor: pointer;
+}
+
+file-drop-actions button[type='submit']:hover {
+    background: var(--primary-hover);
+}
