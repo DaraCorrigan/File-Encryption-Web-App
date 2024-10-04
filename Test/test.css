@@ -7,7 +7,7 @@
 :root {
     --primary: #344995;
     --primary-hover: #2b3d7a;
-    --background: #080808;
+    --background: #808080;
     --secondary: #ffffff;
     --file-drop-background: #fff;
     --grey: #d3d3d3;
@@ -46,6 +46,7 @@ body {
     border: 1px solid var(--border);
     width: 100%;
     background: var(--file-drop-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .file-drop h2 {
@@ -160,4 +161,10 @@ body {
 
 file-drop-actions button[type='submit']:hover {
     background: var(--primary-hover);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 12rem;
 }
