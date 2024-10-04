@@ -118,3 +118,18 @@ body {
     margin-top: 2rem;
     gap: 1rem;
 }
+
+.fil-drop-actions button {
+    flex-grow: 1;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.file-drop-help {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
