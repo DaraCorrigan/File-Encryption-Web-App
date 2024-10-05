@@ -135,7 +135,7 @@ body {
     gap: 0.5rem;
 }
 
-.file-drop-actions button[type='cancel'] {
+.file-drop-actions button[type='reset'] {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     color: var(--text);
@@ -145,7 +145,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.file-drop-actions button[type='cancel']:hover {
+.file-drop-actions button[type='reset']:hover {
     border: 1px solid var(--primary);
     color: var(--primary);
 }
