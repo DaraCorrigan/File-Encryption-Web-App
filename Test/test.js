@@ -2,6 +2,7 @@ const fileDrop = document.getElementsByClassName("file-drop")[0];
 const inputFiles = document.querySelectorAll(".file-drop-area input[type='file']");
 const inputElement = inputFiles[0];
 const fileDropElement = inputElement.closest(".file-drop-area")
+// 250MB File Limit
 const fileLimit = 250 * 1000000;
 
 inputElement.addEventListener("change", (e) => {
@@ -19,3 +20,4 @@ fileDropElement.addEventListener("dragover", (e) => {
     e.preventDefault();
     fileDropElement.classList.add("fileDrop--over");
 });
+
