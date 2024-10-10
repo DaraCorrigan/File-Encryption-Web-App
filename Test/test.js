@@ -48,8 +48,7 @@ const updateFileDropList = (fileDropElement, file) => {
   let fileDropMessage = fileDropElement.querySelector(".file-information");
 
   fileDropMessage.innerHTML = `
-        ${file.name}, ${file.size} bytes
-    `;
+        ${file.name}, ${(file.size / 1000000).toFixed(2)}MB`;
 };
 
 fileDrop.addEventListener("reset", (e) => {
