@@ -2,6 +2,13 @@ const expand_btn = document.querySelector(".expand");
 
 expand_btn.addEventListener("click", () => {
   document.body.classList.toggle("collapsed");
+  if (document.body.classList.contains("collapsed")) {
+    document.querySelector("div.hide-profile-name").style.display = 'none';
+    document.querySelector("svg.logout").style.display= 'none';
+  } else {
+    document.querySelector("div.hide-profile-name").style.display = 'block';
+    document.querySelector("svg.logout").style.display= 'block';
+  }
 });
 
 const current = window.location.href;
