@@ -30,6 +30,7 @@ html {
     box-sizing: border-box;
 }
 
+/*/////////////////////////////////// Navigation Menu ////////////////////////////////////////////////////////////*/
 .navigation-menu {
     position: relative;
     top: 0;
@@ -276,3 +277,5 @@ body.collapsed .hide {
     cursor: pointer;
     stroke: var(--logout);
   }
+
+  /* ////////////////////////////////File Drop ///////////////////////////////////////////// */

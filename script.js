@@ -2,12 +2,14 @@ const expand_btn = document.querySelector(".expand");
 
 expand_btn.addEventListener("click", () => {
   document.body.classList.toggle("collapsed");
+  const profileDiv = document.querySelector('div#hide-profile');
+  const logoutButton = document.querySelector('svg#logout-button');
   if (document.body.classList.contains("collapsed")) {
-    document.querySelector("div.hide-profile-name").style.display = 'none';
-    document.querySelector("svg.logout").style.display= 'none';
+    profileDiv.style.display = 'none';
+    logoutButton.style.display = 'none';
   } else {
-    document.querySelector("div.hide-profile-name").style.display = 'block';
-    document.querySelector("svg.logout").style.display= 'block';
+    profileDiv.style.display = 'block';
+    logoutButton.style.display = 'block';
   }
 });
 
