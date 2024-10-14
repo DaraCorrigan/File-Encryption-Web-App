@@ -1,3 +1,4 @@
+/*////////////////////////////////// Main ///////////////////////////////////////////////////*/
 :root {
   /* Main Colours */
     --primary: #191919;
@@ -303,32 +304,6 @@ body.collapsed .hide {
   }
 
   /* ////////////////////////////////File Drop ///////////////////////////////////////////// */
-
-/* :root {
-    --primary: #344995;
-    --primary-hover: #2b3d7a;
-    --background: #808080;
-    --secondary: #ffffff;
-    --file-drop-background: #fff;
-    --grey: #d3d3d3;
-    --border: #edf1f3;
-    --file-drop-border: #d4dce6;
-    --headline: #211e30;
-    --text: #0a090c;
-    --primary-text: #f2f7fe;
-    --file-drop-hover: #f2f7fe;
-} */
-
-/* body {
-    font-family: 'Work Sans', sans-serif;
-    background: var(--background-file-drop);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 1rem;
-    color: var(--text-file-drop);
-} */
 
 *::selection {
     background: var(--primary-fie-drop);
