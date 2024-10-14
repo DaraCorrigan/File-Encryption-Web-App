@@ -10,6 +10,19 @@
     --text: #E7EAEE;
     --divider-background: var(--bg);
     --border-color: var(--bg);
+
+    --primary-file-drop: #344995;
+    --primary-hover-file-drop: #2b3d7a;
+    --background-file-drop: #808080;
+    --secondary-file-drop: #ffffff;
+    --file-drop-background: #fff;
+    --grey-file-drop: #d3d3d3;
+    --border-file-drop: #edf1f3;
+    --file-drop-border: #d4dce6;
+    --headline-file-drop: #211e30;
+    --text-file-drop: #0a090c;
+    --primary-text-file-drop: #f2f7fe;
+    --file-drop-hover: #f2f7fe;
 }
 
 body {
@@ -279,3 +292,168 @@ body.collapsed .hide {
   }
 
   /* ////////////////////////////////File Drop ///////////////////////////////////////////// */
+
+/* :root {
+    --primary: #344995;
+    --primary-hover: #2b3d7a;
+    --background: #808080;
+    --secondary: #ffffff;
+    --file-drop-background: #fff;
+    --grey: #d3d3d3;
+    --border: #edf1f3;
+    --file-drop-border: #d4dce6;
+    --headline: #211e30;
+    --text: #0a090c;
+    --primary-text: #f2f7fe;
+    --file-drop-hover: #f2f7fe;
+} */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: var(--background-file-drop);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    color: var(--text-file-drop);
+}
+
+*::selection {
+    background: var(--primary-fie-drop);
+    color: var(--primary-text-file-drop);
+}
+
+.file-drop {
+    border-radius: 1rem;
+    min-width: 25rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    border: 1px solid var(--border-file-drop);
+    width: 100%;
+    background: var(--file-drop-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-drop h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--headline-file-drop);
+}
+
+.file-drop p {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--headline-file-drop);
+}
+
+.file-drop-area {
+    padding: 1rem;
+    position: relative;
+    margin-top: 1.5rem;
+    min-height: 16rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed var(--file-drop-border);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-drop-description {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-drop-area .file-information {
+    font-size: 1.1rem;
+}
+
+.file-drop-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.file-drop-area .upload-file-icon i {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    color: var(--headline-file-drop);
+}
+
+.file-drop-area:hover {
+    background: var(--file-drop-hover);
+}
+
+.file-drop--hover {
+    border: 2px solid var(--primary-file-drop);
+    background: var(--dropzone-over-file-drop);
+}
+
+.file-drop-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.file-drop-actions button {
+    flex-grow: 1;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.file-drop-help {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.file-drop-actions button[type='reset'] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-file-drop);
+    background: var(--secondary-file-drop);
+    cursor: pointer;
+    border: 1px solid var(--file-drop-border);
+    transition: all 0.3s ease;
+}
+
+.file-drop-actions button[type='reset']:hover {
+    border: 1px solid var(--primary-file-drop);
+    color: var(--primary-file-drop);
+}
+
+.file-drop-actions button[type='submit'] {
+    background: var(--primary-file-drop);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--primary-text-file-drop);
+    border: none;
+    cursor: pointer;
+}
+
+file-drop-actions button[type='submit']:hover {
+    background: var(--primary-hover-file-drop);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 12rem;
+}
