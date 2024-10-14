@@ -19,7 +19,7 @@
     --file-drop-hover: #f2f7fe;
 }
 
-body {
+file-drop-body {
     font-family: 'Work Sans', sans-serif;
     background: var(--background);
     display: flex;
