@@ -373,7 +373,7 @@ body.collapsed .hide {
 }
 
 .file-drop-area .upload-file-icon i {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 0.5rem;
     color: var(--headline-file-drop);
 }
