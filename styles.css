@@ -307,10 +307,10 @@ body.collapsed .hide {
     stroke: var(--logout);
   }
 
-  /* ////////////////////////////////File Drop ///////////////////////////////////////////// */
+  /* //////////////////////////////// File Drop ///////////////////////////////////////////// */
 
   /* Doesn't currently work */
-  
+
   /* #file-encryption.hidden {
     opacity: 0;
     visibility: hidden;
