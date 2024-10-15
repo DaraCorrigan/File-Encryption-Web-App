@@ -309,6 +309,22 @@ body.collapsed .hide {
 
   /* ////////////////////////////////File Drop ///////////////////////////////////////////// */
 
+  /* Doesn't currently work */
+  
+  /* #file-encryption.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+  }
+  
+  #file-encryption {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+  } */
+
 *::selection {
     background: var(--primary-fie-drop);
     color: var(--primary-text-file-drop);

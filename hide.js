@@ -1,3 +1,9 @@
+// document.getElementById('file-encryption-link').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     const element = document.getElementById('file-encryption');
+//     element.classList.toggle('hidden');
+// });
+
 document.addEventListener('DOMContentLoaded', function(){
     const fileDropSection = document.getElementById('file-encryption');
     const fileEncryptionLink = document.getElementById('file-encryption-link');
