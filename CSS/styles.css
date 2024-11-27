@@ -36,6 +36,7 @@ body {
     background: var(--background);
     display: flex;
     flex-direction: row;
+    transition: all 1s ease;
 }
 
 .main-container {
@@ -74,7 +75,26 @@ html {
     border: 1px solid #252C36;
     flex-direction: column;
     background: var(--navigation-menu-background);
-    transition: max-width 0.2s ease-in-out;
+}
+
+@keyframes navCollapse {
+    from {
+        max-width: 18rem;
+    }
+
+    to {
+      max-width: 5rem;
+    }
+}
+
+@keyframes navExpand {
+    from {
+      max-width: 5rem;
+    }
+
+    to {
+      max-width: 18rem;
+    }
 }
 
 .navigation-menu h2 {
@@ -311,7 +331,7 @@ body.collapsed .hide {
 
   /* Doesn't currently work */
 
-  /* #file-encryption.hidden {
+  #file-encryption.hidden {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
@@ -323,7 +343,7 @@ body.collapsed .hide {
     visibility: visible;
     transform: translateY(0);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
-  } */
+  }
 
 *::selection {
     background: var(--primary-fie-drop);
