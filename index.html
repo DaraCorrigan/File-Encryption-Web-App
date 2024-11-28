@@ -78,7 +78,7 @@
         </div>
         <div class="navigation-menu-user-profile">
             <div class="profile-picture-wrapper">
-                <img class="profile-picture" src="images/user.jpg" alt="User Profile Picture">
+                <img class="profile-picture" src="assets/images/user.jpg" alt="User Profile Picture">
                 <div class="status"></div>
             </div>
             <div id="hide-profile">
@@ -99,7 +99,7 @@
     <!-- File Encryption -->
     <div class="main-container">
         <section id="file-encryption" class="hidden">
-            <form class="file-drop">
+            <form class="file-drop" action="/assets/php/server.php" method="POST" enctype="multipart/form-data">
                 <h2>Upload Your File</h2>
                 <p>Click to upload or drag and drop your file</p>
 
