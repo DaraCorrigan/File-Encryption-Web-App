@@ -11,7 +11,7 @@
     --headline-text: #546471;
     --text: #E7EAEE;
     --divider-background: var(--bg);
-    --border-color: var(--bg);
+    --border-colour: var(--bg);
 
   /* File Drop Colours */
     --primary-file-drop: #344995;
@@ -34,9 +34,9 @@
     --input-border: #727272;
     --password-validator-text: #727272;
     --password-validator-secondary: #F1F1F1;
-    --password-validator-primary: #8057D7;
-    --not-valid: #EF4D61;
-    --warning: #FFC12E;
+    --password-validator-primary: #344995;
+    --not-met: #EF4D61;
+    --amber: #FFC12E;
     --success: #35D39D;
 }
 
@@ -509,3 +509,122 @@ file-drop-actions button[type='submit']:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
 }
 
+.box h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.input_wrapper {
+  position: relative;
+  padding: 1rem 0 0;
+}
+
+.input_field {
+  border: 1px solid var(--input-border);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: var(--password-validator-text);
+  padding: 0.5rem;
+  padding-right: 2rem;
+  background: transparent;
+  outline: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.input_field::placeholder {
+  color: transparent;
+}
+
+.input_field:placeholder-shown
+  ~.input_label {
+    font-size: 1rem;
+    cursor: text;
+    color: var(--password-validator-text);
+    top: 1.5rem;
+}
+
+label,
+.input_field:focus ~ .input-label {
+    position: absolute;
+    top: 0.375rem;
+    padding: 0 0.25rem;
+    background: var(--box-background);
+    display: block;
+    font-size: 0.875rem;
+    left: 0.5rem;
+    color: var(--password-validator-text);
+    transition: 0.3s;
+}
+
+.input_field:focus ~ .input_label {
+  color: var(--password-validator-primary);
+}
+
+.input_field:focus {
+  border: 1px solid var(--password-validator-primary);
+  outline: 1px solid var(--password-validator-primary);
+}
+
+.input_icon {
+  position: absolute;
+  right: -0.625rem;
+  bottom: -0.625rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.password-strength {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  margin-top: 0.25rem;
+}
+
+.password strength-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.password-strength-items li {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.password-strength-items li img {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.progress {
+  height: 3px !important;
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 0.25rem;
+}
+
+.progress-bar {
+  height: 3px !important;
+  border-radius: 0.25rem;
+}
+
+.progress-bar-not-met {
+  background: var(--not-met);
+}
+
+.progress-bar-amber {
+  background: var(--amber);
+}
+
+.progress-bar-success{
+  background: var(--success);
+}
