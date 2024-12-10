@@ -498,6 +498,41 @@ file-drop-actions button[type='submit']:hover {
 
 /* ///////////////////////////// Password Validator ///////////////////////////////////////////// */
 
+.password-validator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.password-validator-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background: var(--bg);
+  background-size: 4rem 4rem;
+  background-image: 
+      linear-gradient(
+          to right, 
+          var(--secondary) 1px, 
+          transparent 1px),
+      linear-gradient(
+          to bottom, 
+          var(--secondary) 1px, 
+          transparent 1px);  
+}
+
+.password-validator-body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.password-validator-body *::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
 .box {
   background: var(--box-background);
   padding: 1.5rem;
