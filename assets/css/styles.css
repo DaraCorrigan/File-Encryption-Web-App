@@ -13,7 +13,7 @@
     --divider-background: var(--bg);
     --border-color: var(--bg);
 
-    /* File Drop Colours */
+  /* File Drop Colours */
     --primary-file-drop: #344995;
     --primary-hover-file-drop: #2b3d7a;
     --background-file-drop: #808080;
@@ -26,6 +26,18 @@
     --text-file-drop: #0a090c;
     --primary-text-file-drop: #f2f7fe;
     --file-drop-hover: #f2f7fe;
+
+  /* Password Validator Colours */
+    --password-validator-background: #F9F9F9;
+    --box-background: #FFF;
+    --box-border: #eaeaea;
+    --input-border: #727272;
+    --password-validator-text: #727272;
+    --password-validator-secondary: #F1F1F1;
+    --password-validator-primary: #8057D7;
+    --not-valid: #EF4D61;
+    --warning: #FFC12E;
+    --success: #35D39D;
 }
 
 body {
