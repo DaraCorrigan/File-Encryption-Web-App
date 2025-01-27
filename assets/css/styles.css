@@ -508,8 +508,6 @@ file-drop-actions button[type='submit']:hover {
 }
 
 .password-validator-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; 
   background: var(--bg);
   background-size: 4rem 4rem;
   background-image: 
