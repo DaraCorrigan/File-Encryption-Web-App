@@ -462,6 +462,69 @@ body.collapsed .hide {
     gap: 0.5rem;
 }
 
+.encryption-menu .encryption-drop-down-button {
+  display: flex;
+  height: 50px;
+  background: #fff;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.encryption-drop-down-button i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.encryption-menu.active .encryption-drop-down-button i {
+  transform: rotate(-180deg);
+}
+
+.encryption-menu .selections {
+  position: relative;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+  transform: translateY(-100px);
+  transition: .3s ease-in-out;
+}
+
+.encryption-menu.active .selections {
+  display: block;
+  transform: translateY(0px);
+}
+
+.selections .selection {
+  display: flex;
+  height: 50px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+
+.selections .selection:hover {
+  background: #f2f2f2;
+}
+
+.selection i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.selection .selection-text {
+  font-size: 16px;
+}
+
 .file-drop-actions button[type='reset'] {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
