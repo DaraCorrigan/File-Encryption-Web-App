@@ -462,6 +462,10 @@ body.collapsed .hide {
     gap: 0.5rem;
 }
 
+.encryption-menu {
+  position: relative;
+}
+
 .encryption-menu .encryption-drop-down-button {
   display: flex;
   height: 50px;
@@ -486,15 +490,19 @@ body.collapsed .hide {
 }
 
 .encryption-menu .selections {
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   padding: 15px;
   margin-top: 10px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: none;
-  transform: translateY(-100px);
+  transform: translateY(-10px);
   transition: .3s ease-in-out;
+  z-index: 1000;
 }
 
 .encryption-menu.active .selections {
