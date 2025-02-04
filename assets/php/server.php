@@ -47,7 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-
+<!-- Original for old_server.php -->
+ <!-- Put back eventually -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!isset($_FILES['uploaded-file'])) {
