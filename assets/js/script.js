@@ -56,3 +56,13 @@ selections.forEach((selection) => {
     encryptionMenu.classList.remove("active");
   });
 });
+
+function toggleDropdown() {
+    document.querySelector('.selections').classList.toggle('hidden');
+}
+
+function setEncryptionMethod(method) {
+    document.getElementById('encryption-method').value = method;
+    document.querySelector('.encryption-drop-down-text').innerText = method.toUpperCase();
+    document.querySelector('.selections').classList.add('hidden');
+}
