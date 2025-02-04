@@ -16,17 +16,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_path = $uploads_dir . '/' . basename($file['name']);
     move_uploaded_file($file['tmp_name'], $file_path);
 
-    function encryptFile($filePath, $key) {
-        $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-256-cbc'));
+    function encryptFile($filePath, $key, $method) {
+        $iv_length = openssl_cipher_iv_length($method);
+        $iv = openssl_random_pseudo_bytes($iv_length);
         $plaintext = file_get_contents($filePath);
-        $ciphertext = openssl_encrypt($plaintext, 'aes-256-cbc', $key, 0, $iv);
+        $ciphertext = openssl_encrypt($plaintext, $method, $key, 0, $iv);
+
+        if ($ciphertext === false) {
+            echo 'Encryption failed';
+            return;
+        }
 
         file_put_contents($filePath . '.enc', $iv . $ciphertext);
     }
 
     $key = openssl_random_pseudo_bytes(32);
-    encryptFile($file_path, $key);
+    $method = $_POST['encryption-method'];
 
-    echo 'File encrypted successfully';
+    // Validate if method is supported
+    if (in_array($method, openssl_get_cipher_methods())) {
+        encryptFile($file_path, $key, $method);
+        echo 'File encrypted successfully using ' . htmlspecialchars($method);
+    } else {
+        echo 'Unsupported encryption method: ' . htmlspecialchars($method);
+    }
 }
 ?>
