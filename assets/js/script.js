@@ -40,6 +40,7 @@ allLinks.forEach((elem) => {
   });
 });
 
+// Drop Down Encryption Selections
 const encryptionMenu = document.querySelector(".encryption-menu"),
   dropDownButton = encryptionMenu.querySelector(".encryption-drop-down-button"),
   selections = encryptionMenu.querySelectorAll(".selection"),
@@ -61,6 +62,7 @@ function toggleDropdown() {
     document.querySelector('.selections').classList.toggle('hidden');
 }
 
+// Select Encryption Method
 function setEncryptionMethod(method) {
     document.getElementById('encryption-method').value = method;
     document.querySelector('.encryption-drop-down-text').innerText = method.toUpperCase();
