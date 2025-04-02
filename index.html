@@ -127,7 +127,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#secure-password-generator" title="Secure Password Generator">
+                        <a href="#password-generator" title="Password Generator">
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
@@ -274,11 +274,13 @@
         </section>
 
         <!-- Password Generator -->
-        <section id="password-generator" class="password-generator-body">
+        <section id="password-generator" class="password-generator-body, hidden">
             <div class="password-generator">
-                <h1>Password Generator</h1>
+                <h1 id="generator-h1">Password Generator</h1>
                 <label class="password-generator-wrapper"><input type="text" id="password" readonly placeholder="Generate a password">
-                <button class="material-icons" id="copy">content_copy</button>
+                    <button id="copy-icon">
+                        <img src="assets/svg/clipboard.svg" alt="Copy Icon">
+                    </button>
                 </label>
 
                 <label>
@@ -306,7 +308,7 @@
                     <input type="checkbox" id="symbols" checked>
                 </label>
 
-                <button type="submit" id="generate">Generate Password</button>
+                <button type="submit-generator" id="generate">Generate Password</button>
 
             </div>
         </section>
