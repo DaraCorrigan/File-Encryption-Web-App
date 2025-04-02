@@ -888,3 +888,108 @@ file-drop-actions button[type='submit']:hover {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* ///////////////////////////// Password Generator ///////////////////////////////////////////// */
+
+.password-generator-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+.password-generator {
+  width: 100%;
+  max-width: 640px;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+#generator-h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+input:not([type='checkbox']),
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.password-generator-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.password-generator-wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 6px;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  background: #344995;
+}
+
+.password-generator-wrapper input {
+  flex: 2 2 0%;
+  padding: 1rem;
+  color: #fff;
+}
+
+.password-generator-wrapper input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.password-generator-wrapper button {
+  cursor: pointer;
+  background: #344995;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  display: flex;
+  user-select: none;
+  margin-bottom: 2rem;
+}
+
+label span {
+  display: block;
+  flex: 2 2 0%;
+  white-space: nowrap;
+}
+
+label input[type="number"] {
+  text-align: right;
+}
+
+button[type="submit-generator"] {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  background: #344995;
+  background-size: 200%;
+  background-position: 25%;
+  transition: 0.3s ease-out;
+}
+
+button[type="submit"]:hover {
+  background-position: 75%;
+}
