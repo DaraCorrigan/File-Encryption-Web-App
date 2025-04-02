@@ -277,39 +277,39 @@
         <section id="password-generator" class="password-generator-body, hidden">
             <div class="password-generator">
                 <h1 id="generator-h1">Password Generator</h1>
-                <label class="password-generator-wrapper"><input type="text" id="password" readonly placeholder="Generate a password">
+                <label class="password-generator-wrapper">
+                    <input type="text" id="generated-password" readonly placeholder="Generate a password"> <!-- Updated ID -->
                     <button id="copy-icon">
                         <img src="assets/svg/clipboard.svg" alt="Copy Icon">
                     </button>
                 </label>
-
-                <label>
+        
+                <label for="password-length">
                     <span>Password Length:</span>
-                    <input type="number" id="length" value="16">
+                    <input type="number" id="password-length" value="16"> <!-- Updated ID -->
                 </label>
-
-                <label>
+        
+                <label for="include-uppercase">
                     <span>Include Uppercase Letters:</span>
-                    <input type="checkbox" id="uppercase" checked>
+                    <input type="checkbox" id="include-uppercase" checked> <!-- Updated ID -->
                 </label>
-
-                <label>
+        
+                <label for="include-lowercase">
                     <span>Include Lowercase Letters:</span>
-                    <input type="checkbox" id="lowercase" checked>
+                    <input type="checkbox" id="include-lowercase" checked> <!-- Updated ID -->
                 </label>
-
-                <label>
+        
+                <label for="include-numbers">
                     <span>Include Numbers:</span>
-                    <input type="checkbox" id="numbers" checked>
+                    <input type="checkbox" id="include-numbers" checked> <!-- Updated ID -->
                 </label>
                 
-                <label>
+                <label for="include-symbols">
                     <span>Include Symbols:</span>
-                    <input type="checkbox" id="symbols" checked>
+                    <input type="checkbox" id="include-symbols" checked> <!-- Updated ID -->
                 </label>
-
+        
                 <button type="submit-generator" id="generate">Generate Password</button>
-
             </div>
         </section>
     </div>
@@ -319,6 +319,7 @@
     <script src="assets/js/hide.js"></script>
     <script src="assets/js/validator.js"></script>
     <script src="assets/js/profile-group.js"></script>
+    <script src="assets/js/password-generator.js"></script>
 </body>
 
 </html>
