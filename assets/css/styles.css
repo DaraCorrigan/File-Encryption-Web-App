@@ -67,6 +67,381 @@ html {
   display: none;
 }
 
+/* ///////////////////////////// Profile Menu ///////////////////////////////////////////// */
+
+/* header {
+  position: fixed;
+  height: 5rem;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #f8f9fa;
+}
+
+.profile-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-group .profile-icons {
+  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.5rem;
+  background: #fcfcfc;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-count {
+  background: #e63946;
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.navigation-group 
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.profile-button {
+  background: none;
+  color: inherit;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-button:hover {
+  transform: scale(1.1);
+}
+
+.profile-button img,
+.profile-picture {
+  display: block;
+  width: 3.125rem;
+  height: 3.125rem;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-name {
+  font-size: 1.15rem;
+}
+
+.profile-username {
+  font-size: 0.95rem;
+}
+
+.dropdown-wrapper {
+  width: 19rem;
+  top: 5.25rem;
+  right: 1rem;
+  padding: 1rem;
+  position: absolute;
+  border-radius: 0.75rem;
+  background: #fcfcfc;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  color: #4a4e52;
+  gap: 0.25rem;
+  animation: fadeOutAnimation ease-in-out 0.3s forwards;
+}
+
+.dropdown-wrapper--fade-in {
+  animation: fadeInAnimation ease-in-out 0.3s forwards;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0.25rem;
+  align-items: center;
+}
+
+.plan-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.plan-description h2 {
+  font-size: 1.15rem;
+}
+
+.upgrade-button {
+  background: #ebf1ff;
+  color: #4769fa;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  max-height: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.none {
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeOutAnimation ease-in-out 0.3s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.divider {
+  width: 100%;
+  padding: 0;
+  margin: 0.75rem;
+  border: 1px solid #e2e3e6;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.25rem;
+}
+
+nav > ul > li {
+  height: 3rem;
+  color: #4a4e52;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+nav > ul > li:hover {
+  background: #ebf1ff;
+  color: #4a4e52;
+}
+
+nav > ul > li svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  stroke: #4a4e52;
+}
+
+nav > ul > li:hover > svg {
+  stroke: #4a4e52;
+} */
+
+header {
+  position: fixed;
+  height: 5rem;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-group .profile-icons {
+  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.5rem;
+  background: #fcfcfc;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-count {
+  background: #e63946;
+  height: 0.6rem;
+  width: 0.6rem; /* Added width */
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.profile-button {
+  background: none;
+  color: inherit;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-button:hover {
+  transform: scale(1.1);
+}
+
+.profile-button img,
+.profile-picture {
+  display: block;
+  width: 3.125rem;
+  height: 3.125rem;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-name {
+  font-size: 1.15rem;
+}
+
+.profile-username {
+  font-size: 0.95rem;
+}
+
+.dropdown-wrapper {
+  width: 19rem;
+  top: 5.25rem;
+  right: 1rem;
+  padding: 1rem;
+  position: absolute;
+  border-radius: 0.75rem;
+  background: #fcfcfc;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: none; /* Simplified hide class */
+  flex-direction: column;
+  color: #4a4e52;
+  gap: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown-wrapper.show {
+  display: flex; /* Show dropdown */
+  opacity: 1;
+  visibility: visible;
+}
+
+.divider {
+  width: 100%;
+  padding: 0;
+  margin: 0.75rem 0; /* Added margin */
+  border: 1px solid #e2e3e6;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.25rem;
+}
+
+nav > ul > li {
+  height: 3rem;
+  color: #4a4e52;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+nav > ul > li:hover {
+  background: #ebf1ff;
+  color: #4a4e52;
+}
+
+nav > ul > li img {
+  width: 1.75rem;
+  height: 1.75rem;
+  stroke: #4a4e52;
+}
+
+nav > ul > li:hover img {
+  stroke: #4a4e52;
+}
+
 /*/////////////////////////////////// Navigation Menu ////////////////////////////////////////////////////////////*/
 
 .navigation-menu {
