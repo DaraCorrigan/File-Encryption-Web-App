@@ -786,7 +786,7 @@ file-drop-actions button[type='submit']:hover {
   min-width: 100%;
   outline: white;
   background: transparent;
-  transition: var(--border-colour) 0.2s;
+  transition: var(--border-color) 0.2s;
 }
 
 .input_field::placeholder {
@@ -946,7 +946,8 @@ input[type="checkbox"] {
 .password-generator-wrapper input {
   flex: 2 2 0%;
   padding: 1rem;
-  color: #fff;
+  color: black;
+  font-size: 1rem;
 }
 
 .password-generator-wrapper input::placeholder {
@@ -957,6 +958,7 @@ input[type="checkbox"] {
 .password-generator-wrapper button {
   cursor: pointer;
   background: #344995;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -990,6 +992,7 @@ button[type="submit-generator"] {
   transition: 0.3s ease-out;
 }
 
-button[type="submit"]:hover {
+button[type="submit-generator"]:hover {
   background-position: 75%;
+  background: #2b3d7a;
 }
