@@ -312,6 +312,32 @@
                 <button type="submit-generator" id="generate">Generate Password</button>
             </div>
         </section>
+
+        <!-- Password Manager -->
+        <section id="password-manager" class="password-manager-body, hidden">
+            <h1>Password Manager</h1>
+            <div class="password-manager-form-container">
+                <input type="text" id="password-manager-website" placeholder="Website Name">
+                <input type="password" id="password-manager-password" placeholder="Password">
+                <button id="add-password-button">Add Password</button>
+            </div>
+            <div class="passwords-list">
+                <ul id="passwords-list"></ul>
+            </div>
+
+            <div class="password-manager-popup" class="popup-hidden">
+                <div class="popup-content">
+                    <div id="popup-message"></div>
+                        <div id="popup-input-container" class="hidden">
+                            <input type="text" id="popup-input" placeholder="New Password">
+                        </div>
+                        <div class="popup-buttons">
+                            <button id="popup-ok">OK</button>
+                            <button id="popup-cancel">Cancel</button>
+                        </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="assets/js/script.js"></script>
