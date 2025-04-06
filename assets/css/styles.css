@@ -1049,7 +1049,7 @@ button:hover {
 
 .passwords-list ul {
   list-style: none;
-  padding: 0;
+  padding-top: 10px;
 }
 
 .passwords-list li {
@@ -1088,7 +1088,7 @@ button:hover {
   color: #0056b3;
 }
 
-.popup {
+#custom-pwm-popup {
   position: fixed;
   top: 0;
   left: 0;
