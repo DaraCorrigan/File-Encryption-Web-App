@@ -38,7 +38,7 @@ document.getElementById('add-password-button').addEventListener('click', () => {
         document.getElementById('pwm-website').value = '';
         document.getElementById('pwm-password').value = '';
     } else {
-        showPopup('Please fill in both fields.');
+        showPopup('Please fill out required fields.');
     }
 });
 
