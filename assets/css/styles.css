@@ -1018,8 +1018,15 @@ button[type="submit-generator"]:hover {
   gap: 10px;
 }
 
-#website,
-#password {
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#pwm-website,
+#pwm-password {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
