@@ -1088,7 +1088,7 @@ button:hover {
   color: #0056b3;
 }
 
-#custom-pwm-popup {
+/* #custom-pwm-popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -1098,7 +1098,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .pwm-popup-content {
   background: white;
