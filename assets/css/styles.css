@@ -491,6 +491,28 @@ body.collapsed .hide {
     stroke: var(--logout);
   }
 
+  .login-wrapper {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.login-button {
+    background: #344995;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background: #2b3d7a;
+}
+
   /* //////////////////////////////// File Drop ///////////////////////////////////////////// */
 
   #file-encryption.hidden {
