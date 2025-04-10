@@ -149,7 +149,7 @@
                 </ul>
             </div>
         </div>
-        <div class="navigation-menu-user-profile">
+        <!-- <div class="navigation-menu-user-profile">
             <div class="profile-picture-wrapper">
                 <img class="profile-picture" src="assets/images/user.jpg" alt="User Profile Picture">
                 <div class="status"></div>
@@ -166,6 +166,28 @@
                 <path d="M9 12h12l-3 -3" />
                 <path d="M18 15l3 -3" />
             </svg>
+        </div> -->
+        <div class="navigation-menu-user-profile" id="user-profile" style="display: none;">
+            <div class="profile-picture-wrapper">
+                <img class="profile-picture" src="assets/images/user.jpg" alt="User Profile Picture">
+                <div class="status"></div>
+            </div>
+            <div id="hide-profile">
+                <div class="display-name">Gordon Ramsay</div>
+                <div class="username">@gordonrambo</div>
+            </div>
+            <svg id="logout-button" class="logout" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path d="M9 12h12l-3 -3" />
+                <path d="M18 15l3 -3" />
+            </svg>
+        </div>
+        
+        <div class="login-wrapper" id="login-section">
+            <button id="login-button" class="login-button">Login</button>
         </div>
     </nav>
 
