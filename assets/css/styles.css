@@ -818,20 +818,10 @@ form {
   font-size: 20px;
 }
 
-.forgot-link {
-  margin: -15px 0 15px;
-}
-
-.forgot-link a {
-  font-size: 14.5px;
-  color: #333;
-  text-decoration: none;
-}
-
 .submit-login-button {
   width: 100%;
   height: 48px;
-  background: #7494ec;
+  background: #344995;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: none;
@@ -839,6 +829,10 @@ form {
   font-size: 16px;
   color: #fff;
   font-weight: 600;
+}
+
+.submit-login-button:hover {
+  background: #2b3d7a;
 }
 
 .login-popup-container p {
@@ -858,7 +852,7 @@ form {
   left: -250%;
   width: 300%;
   height: 100%;
-  background: #7494ec;
+  background: #344995;
   border-radius: 150px;
   z-index: 2;
   transition: 1.8s ease-in-out;
