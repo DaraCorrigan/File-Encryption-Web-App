@@ -1,30 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const userProfile = document.getElementById('user-profile');
-    const loginSection = document.getElementById('login-section');
-    const loginButton = document.getElementById('login-button');
+    const loginPopup = document.querySelector('.login-popup-container');
+    const loginButton = document.querySelector('#login-button');
 
-    let isLoggedIn = false;
-
-    function updateUI() {
-        if (isLoggedIn) {
-            userProfile.style.display = 'flex';
-            loginSection.style.display = 'none';
-        } else {
-            userProfile.style.display = 'none';
-            loginSection.style.display = 'flex';
-        }
-    }
-
+    // Opens the popup when the button is clicked
     loginButton.addEventListener('click', () => {
-        isLoggedIn = true;
-        updateUI();
+        loginPopup.style.display = 'flex';
     });
-
-    const logoutButton = document.getElementById('logout-button');
-    logoutButton.addEventListener('click', () => {
-        isLoggedIn = false;
-        updateUI();
-    });
-
-    updateUI();
 });
