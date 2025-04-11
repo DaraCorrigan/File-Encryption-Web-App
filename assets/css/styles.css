@@ -884,22 +884,23 @@ form {
 }
 
 .toggle-panel.toggle-left {
-  left: 0 !important;
+  left: 0%;
   transition-delay: 1.2s;
 }
 
 .login-popup-container.active .toggle-panel.toggle-left {
-  left: 0 !important;
+  left: -50%;
   transition-delay: .6s;
 }
 
 .toggle-panel.toggle-right {
-  right: -50% !important;
+  right: -50%;
+  transition-delay: .6s;
 }
 
 .login-popup-container.active .toggle-panel.toggle-right {
-  right: 0 !important;
-  transition-delay: 1.2s !important;
+  right: 0;
+  transition-delay: 1.2s;
 }
 
 .toggle-panel p {
