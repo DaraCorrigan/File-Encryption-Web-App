@@ -761,10 +761,11 @@ file-drop-actions button[type='submit']:hover {
   align-items: center;
   color: #333;
   text-align: center;
+  z-index: 1;
 }
 
 .form-box.sign-up {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 
 form {
@@ -784,7 +785,7 @@ form {
 .input-box input {
   width: 100%;
   padding: 13px 50px 13px 20px;
-  background: #fff !important;
+  background: #eee !important;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -844,6 +845,13 @@ form {
   color: #333;
   text-decoration: none;
   margin: 0 8px;
+}
+
+.toggle-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: purple;
 }
 
 /* ///////////////////////////// Password Validator ///////////////////////////////////////////// */
