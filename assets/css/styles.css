@@ -748,7 +748,7 @@ file-drop-actions button[type='submit']:hover {
   background: white;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .form-box {
@@ -763,10 +763,19 @@ file-drop-actions button[type='submit']:hover {
   color: #333;
   text-align: center;
   z-index: 1;
+  transition: .6s ease-in-out 1.2s, visibility 0s 1s;
+}
+
+.login-popup-container.active .form-box {
+  right: 50%;
 }
 
 .form-box.sign-up {
   visibility: hidden;
+}
+
+.login-popup-container.active .form-box.sign-up {
+  visibility: visible;
 }
 
 form {
