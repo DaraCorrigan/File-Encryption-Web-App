@@ -742,6 +742,7 @@ file-drop-actions button[type='submit']:hover {
 /* ///////////////////////////// Login / Sign Up Popup ///////////////////////////////////////////// */
 
 .login-popup-container {
+  display: none;
   position: relative;
   width: 850px;
   height: 550px;
