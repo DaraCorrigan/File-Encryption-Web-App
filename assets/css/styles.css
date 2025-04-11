@@ -853,7 +853,7 @@ form {
   width: 300%;
   height: 100%;
   background: #344995;
-  border-radius: 150px;
+  border-radius: 70px;
   z-index: 2;
   transition: 1.8s ease-in-out;
 }
