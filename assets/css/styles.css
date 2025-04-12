@@ -741,7 +741,7 @@ file-drop-actions button[type='submit']:hover {
 
 /* ///////////////////////////// Login / Sign Up Popup ///////////////////////////////////////////// */
 
-.login-popup-container {
+/* .login-popup-container {
   display: none;
   position: relative;
   width: 850px;
@@ -971,7 +971,7 @@ form {
     }
     
   }
-}
+} */
 
 /* ///////////////////////////// Password Validator ///////////////////////////////////////////// */
 
@@ -1256,11 +1256,11 @@ button[type="submit-generator"]:hover {
 /* ///////////////////////////// Password Manager ///////////////////////////////////////////// */
 
 .password-manager-container {
-  background: white;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 400px;
+  width: 630px;
 }
 
 #password-manager-h1 {
@@ -1286,13 +1286,14 @@ input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
+  background: #eee;
   border-radius: 4px;
 }
 
 button {
   padding: 10px;
   font-size: 16px;
-  background-color: #28a745;
+  background-color: #344995;
   color: white;
   border: none;
   border-radius: 4px;
@@ -1300,12 +1301,12 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #2b3d7a;
 }
 
 .passwords-list ul {
   list-style: none;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .passwords-list li {
@@ -1327,21 +1328,21 @@ button:hover {
 .passwords-list i {
   cursor: pointer;
   font-size: 16px;
-  color: #007bff;
+  color: #344995;
 }
 
 .passwords-list i:hover {
-  color: #0056b3;
+  color: #2b3d7a;
 }
 
 .show-password {
   cursor: pointer;
-  color: #007bff;
+  color: #344995;
   margin-left: 10px;
 }
 
 .show-password:hover {
-  color: #0056b3;
+  color: #2b3d7a;
 }
 
 /* #custom-pwm-popup {
@@ -1378,21 +1379,27 @@ button:hover {
 }
 
 #pwm-popup-ok {
-  background-color: #28a745;
+  background-color: #344995;
   color: white;
 }
 
 #pwm-popup-ok:hover {
-  background-color: #218838;
+  background-color: #2b3d7a;
 }
 
 #pwm-popup-cancel {
-  background-color: #dc3545;
-  color: white;
+  border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #0a090c;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #edf1f3;
+    transition: all 0.3s ease;
 }
 
 #pwm-popup-cancel:hover {
-  background-color: #c82333;
+  border: 1px solid #344995;
+    color: #344995;
 }
 
 #pwm-popup-input-container {
