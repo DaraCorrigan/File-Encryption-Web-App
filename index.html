@@ -125,7 +125,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#secure-password-generator" title="Secure Password Generator">
+                        <a href="#password-generator" title="Password Generator">
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
@@ -168,16 +168,77 @@
     </nav>
 
     <!-- Main Content -->
-    <!-- <div id="main-content" style="display: none;">
-        <h1>Welcome to Secure Locker</h1>
-        <p>Your content goes here...</p>
-    </div> -->
+    <div class="main-container">
+
+        <!-- File Encryption -->
+        <section id="file-encryption" class="hidden">
+            <form class="file-drop" action="assets/php/encryption.php" method="post" enctype="multipart/form-data">
+                <h2>Upload Your File</h2>
+                <p>Click to upload or drag and drop your file</p>
+
+                <div class="file-drop-area">
+                    <div class="upload-file-icon">
+                        <i class="fa-solid fa-upload"></i>
+                    </div>
+                    <input type="file" required id="upload-file" name="uploaded-file" accepts="image/*">
+                    <p class="file-information">No Files Selected</p>
+                </div>
+
+                <div class="file-drop-description">
+                    <span>Supported formats: JPEG, PNG, PDF, DOCX, PPTX, ...</span>
+                    <span>Max file size: 250MB</span>
+                </div>
+
+                <div class="file-drop-actions">
+                    <div class="encryption-menu">
+                        <div class="encryption-drop-down-button" onclick="toggleDropdown()">
+                            <span class="select-button-text encryption-drop-down-text">Choose your level of
+                                encryption</span>
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+
+                        <ul class="selections">
+                            <li class="selection" onclick="setEncryptionMethod('aes-256-cbc')">
+                                <span class="selection-text">AES-256</span>
+                            </li>
+                            <li class="selection" onclick="setEncryptionMethod('aes-128-cbc')">
+                                <span class="selection-text">AES-128</span>
+                            </li>
+                            <li class="selection" onclick="setEncryptionMethod('des-ede3-cbc')">
+                                <span class="selection-text">Triple DES</span>
+                            </li>
+                            <!-- Unsupported - Research new method -->
+                            <li class="selection" onclick="setEncryptionMethod('bf-cbc')">
+                                <span class="selection-text">Blowfish</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="hidden" id="encryption-method" name="encryption-method" value="aes-256-cbc">
+
+                    <div class="action-buttons">
+                        <button type="reset">
+                            Cancel
+                        </button>
+
+                        <button id="submit" type="submit">
+                            Encrypt
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
 
     <script src="assets/js/login-popup.js"></script>
     <script type="module" src="assets/js/register.js" defer></script>
     <script type="module" src="assets/js/login.js" defer></script>
     <script src="assets/js/logout.js"></script>
     <script src="assets/js/expand-nav.js"></script>
+    <script src="assets/js/navigation-links.js"></script>
+    <script src="assets/js/encryption.js"></script>
     <!-- <script type="module" src="assets/js/login-register.js" defer></script> -->
 </body>
 
