@@ -566,8 +566,8 @@ body.collapsed .hide {
 }
 
 *::selection {
-  background: var(--primary-fie-drop);
-  color: var(--primary-text-file-drop);
+  background: #344995;
+  color: #f2f7fe;
 }
 
 .file-drop {
@@ -578,22 +578,22 @@ body.collapsed .hide {
   justify-content: center;
   flex-direction: column;
   max-width: 36rem;
-  border: 1px solid var(--border-file-drop);
+  border: 1px solid #edf1f3;
   width: 100%;
-  background: var(--file-drop-background);
+  background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .file-drop h2 {
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
-  color: var(--headline-file-drop);
+  color: #211e30;
 }
 
 .file-drop p {
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
-  color: var(--headline-file-drop);
+  color: #211e30;
 }
 
 .file-drop-area {
@@ -606,7 +606,7 @@ body.collapsed .hide {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px dashed var(--file-drop-border);
+  border: 2px dashed #d4dce6;
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -635,16 +635,16 @@ body.collapsed .hide {
 .file-drop-area .upload-file-icon i {
   font-size: 5rem;
   margin-bottom: 0.5rem;
-  color: var(--headline-file-drop);
+  color: #211e30;
 }
 
 .file-drop-area:hover {
-  background: var(--file-drop-hover);
+  background: #f2f7fe;
 }
 
 .file-drop--hover {
-  border: 2px solid var(--primary-file-drop);
-  background: var(--dropzone-over-file-drop);
+  border: 2px solid #344995;
+  background: #f2f7fe;
 }
 
 .file-drop-actions {
@@ -744,29 +744,29 @@ font-size: 16px;
 .file-drop-actions button[type='reset'] {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(--text-file-drop);
+  color: #0a090c;
   background: var(--secondary-file-drop);
   cursor: pointer;
-  border: 1px solid var(--file-drop-border);
+  border: 1px solid #d4dce6;
   transition: all 0.3s ease;
 }
 
 .file-drop-actions button[type='reset']:hover {
-  border: 1px solid var(--primary-file-drop);
-  color: var(--primary-file-drop);
+  border: 1px solid #344995;
+  color: #344995;
 }
 
 .file-drop-actions button[type='submit'] {
-  background: var(--primary-file-drop);
+  background: #344995;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(--primary-text-file-drop);
+  color: #f2f7fe;
   border: none;
   cursor: pointer;
 }
 
 file-drop-actions button[type='submit']:hover {
-  background: var(--primary-hover-file-drop);
+  background: #2b3d7a;
 }
 
 .action-buttons {
@@ -774,3 +774,5 @@ file-drop-actions button[type='submit']:hover {
   gap: 0.5rem;
   max-width: 12rem;
 }
+
+/* File Decryption */
