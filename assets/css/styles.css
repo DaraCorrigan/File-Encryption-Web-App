@@ -1,15 +1,13 @@
 /* Root */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
-html, body {
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
     height: 100%;
-    margin: 0;
-    padding: 0.5rem;
+    background: #30373F;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease;
 }
 
 .main-container {
@@ -19,8 +17,18 @@ html, body {
   flex-grow: 1;
 }
 
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hidden {
@@ -34,7 +42,7 @@ button {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: white;
+    background: #30373F;
 }
 
 .login-popup-container {
@@ -541,7 +549,228 @@ body.collapsed .hide {
   }
 
 /* Main Content */
-#main-content {
-    margin: 20px;
-    font-family: 'Poppins', sans-serif;
+
+/* File Encryption */
+#file-encryption.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+#file-encryption {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+*::selection {
+  background: var(--primary-fie-drop);
+  color: var(--primary-text-file-drop);
+}
+
+.file-drop {
+  border-radius: 1rem;
+  min-width: 25rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 36rem;
+  border: 1px solid var(--border-file-drop);
+  width: 100%;
+  background: var(--file-drop-background);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-drop h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--headline-file-drop);
+}
+
+.file-drop p {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--headline-file-drop);
+}
+
+.file-drop-area {
+  padding: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+  min-height: 16rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed var(--file-drop-border);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-drop-description {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.file-drop-area .file-information {
+  font-size: 1.1rem;
+}
+
+.file-drop-area [type="file"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.file-drop-area .upload-file-icon i {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  color: var(--headline-file-drop);
+}
+
+.file-drop-area:hover {
+  background: var(--file-drop-hover);
+}
+
+.file-drop--hover {
+  border: 2px solid var(--primary-file-drop);
+  background: var(--dropzone-over-file-drop);
+}
+
+.file-drop-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.file-drop-actions button {
+  flex-grow: 1;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.file-drop-help {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.encryption-menu {
+position: relative;
+}
+
+.encryption-menu .encryption-drop-down-button {
+display: flex;
+height: 50px;
+background: #fff;
+padding: 20px;
+font-size: 15px;
+font-weight: 400;
+border-radius: 8px;
+align-items: center;
+cursor: pointer;
+justify-content: space-between;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.encryption-drop-down-button i {
+font-size: 25px;
+transition: 0.3s;
+}
+
+.encryption-menu.active .encryption-drop-down-button i {
+transform: rotate(-180deg);
+}
+
+.encryption-menu .selections {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+padding: 15px;
+margin-top: 10px;
+border-radius: 8px;
+background: #fff;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+display: none;
+transform: translateY(-10px);
+transition: .3s ease-in-out;
+z-index: 1000;
+}
+
+.encryption-menu.active .selections {
+display: block;
+transform: translateY(0px);
+}
+
+.selections .selection {
+display: flex;
+height: 50px;
+cursor: pointer;
+padding: 0 16px;
+border-radius: 8px;
+align-items: center;
+background: #fff;
+}
+
+.selections .selection:hover {
+background: #f2f2f2;
+}
+
+.selection i {
+font-size: 25px;
+margin-right: 12px;
+}
+
+.selection .selection-text {
+font-size: 16px;
+}
+
+.file-drop-actions button[type='reset'] {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-file-drop);
+  background: var(--secondary-file-drop);
+  cursor: pointer;
+  border: 1px solid var(--file-drop-border);
+  transition: all 0.3s ease;
+}
+
+.file-drop-actions button[type='reset']:hover {
+  border: 1px solid var(--primary-file-drop);
+  color: var(--primary-file-drop);
+}
+
+.file-drop-actions button[type='submit'] {
+  background: var(--primary-file-drop);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--primary-text-file-drop);
+  border: none;
+  cursor: pointer;
+}
+
+file-drop-actions button[type='submit']:hover {
+  background: var(--primary-hover-file-drop);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 12rem;
 }
