@@ -776,3 +776,161 @@ file-drop-actions button[type='submit']:hover {
 }
 
 /* Password Manager */
+
+.password-manager-container {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 630px;
+}
+
+#password-manager-h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-manager-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#pwm-website,
+#pwm-password {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #344995;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b3d7a;
+}
+
+.passwords-list ul {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.passwords-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passwords-list .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.passwords-list i {
+  cursor: pointer;
+  font-size: 16px;
+  color: #344995;
+}
+
+.passwords-list i:hover {
+  color: #2b3d7a;
+}
+
+.show-password {
+  cursor: pointer;
+  color: #344995;
+  margin-left: 10px;
+}
+
+.show-password:hover {
+  color: #2b3d7a;
+}
+
+/* #custom-pwm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.pwm-popup-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+}
+
+.pwm-popup-buttons {
+  margin-top: 20px;
+}
+
+.pwm-popup-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pwm-popup-ok {
+  background-color: #344995;
+  color: white;
+}
+
+#pwm-popup-ok:hover {
+  background-color: #2b3d7a;
+}
+
+#pwm-popup-cancel {
+  border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #0a090c;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #edf1f3;
+    transition: all 0.3s ease;
+}
+
+#pwm-popup-cancel:hover {
+  border: 1px solid #344995;
+    color: #344995;
+}
+
+#pwm-popup-input-container {
+  margin: 20px 0;
+}
+
+#pwm-popup-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
