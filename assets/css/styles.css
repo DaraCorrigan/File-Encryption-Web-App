@@ -812,7 +812,7 @@ input {
   border-radius: 4px;
 }
 
-button {
+#add-password-button {
   padding: 10px;
   font-size: 16px;
   background-color: #344995;
@@ -822,7 +822,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#add-password-button:hover {
   background-color: #2b3d7a;
 }
 
