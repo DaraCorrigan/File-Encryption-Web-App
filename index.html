@@ -298,6 +298,47 @@
             </div>
         </section>
 
+        <!-- Password Validator -->
+        <section id="password-validator" class="password-validator-body">
+            <div class="area">
+
+                <div class="input-wrapper">
+                    <label for="password" class="visually-hidden">Enter your password</label>
+                    <input id="password" type="password" name="password" placeholder="Enter Your Password" title="Enter a password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$" required class="input_field" id="togglePassword" aria-describedby="password-strength-text">
+                    <img alt="Reveal Password" title="Reveal/Hide Password" src="assets/svg/reveal.svg" class="input_icon" role="button" tabindex="0">
+                </div>
+
+                <div class="password-strength">
+                    <p class="password-strength-indicator">Your Password Strength:
+                        <img src="assets/svg/not-met.svg" alt="Weak Password" id="password-strength-icon">
+                        <span id="password-strength-text" aria-live="polite">WEAK</span>
+                    </p>
+                    <ul class="password-strength-items">
+
+                        <li class="eight-characters">
+                            <img src="assets/svg/not-met.svg" alt="Checkmark" title="Checkmark" aria-hidden="true">
+                            &nbsp;At least 8 Characters
+                        </li>
+
+                        <li class="lower-and-upper-case">
+                            <img src="assets/svg/not-met.svg" alt="Checkmark" title="Checkmark" aria-hidden="true">
+                            &nbsp;Lowercase &amp; Uppercase Letter
+                        </li>
+
+                        <li class="number">
+                            <img src="assets/svg/not-met.svg" alt="Checkmark" title="Checkmark" aria-hidden="true">
+                            &nbsp;At least 1 Number
+                        </li>
+
+                        <li class="special-character">
+                            <img src="assets/svg/not-met.svg" alt="Checkmark" title="Checkmark" aria-hidden="true">
+                            &nbsp;At least 1 Special Character
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <script src="assets/js/login-popup.js"></script>
