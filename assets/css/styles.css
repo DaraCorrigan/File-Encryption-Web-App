@@ -1041,3 +1041,174 @@ button[type="submit-generator"]:hover {
   background-position: 75%;
   background: #2b3d7a;
 }
+
+/* Password Validator */
+.password-validator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.password-validator-body {
+  background: var(--bg);
+  background-size: 12rem 12rem;
+  background-image: 
+      linear-gradient(
+          to right, 
+          var(--secondary) 3px,
+          transparent 1px),
+      linear-gradient(
+          to bottom, 
+          var(--secondary) 3px,
+          transparent 1px);  
+}
+
+.password-validator-body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.password-validator-body *::selection {
+  background: var(rgb(0, 207, 181));
+  color: #151922;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  margin: -3px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.area {
+  background: #fff;
+  width: 100%;
+  margin-top: 10.5rem;
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 7.8px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input_field {
+  font-size: 1.8rem;
+  border-radius: 1.5rem;
+  color: #e7eaee;
+  padding: 1.5rem;
+  padding-right: 6rem;
+  border: 0;
+  min-width: 100%;
+  outline: white;
+  background: transparent;
+  transition: #eaeaea 0.2s;
+}
+
+.input_field::placeholder {
+  color: #e7eaee;
+  font-size: 1.8rem;
+}
+
+.input_icon {
+  position: absolute;
+  right: 0rem;
+  bottom: -0.375rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.password-strength {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  font-size: 2.25rem;
+  padding: 0 2.25rem;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  border-radius: 0 0 0.75rem 0.75rem;
+  background: #f1f5f8;
+}
+
+.password-strength--visibility {
+  max-height: 75rem;
+  opacity: 1;
+}
+
+#password-strength-icon {
+  display: flex;
+  gap: 0.75rem;
+  height: 2.1rem;
+  width: 2.1rem;
+  align-items: center;
+  font-size: 2.1rem;
+}
+
+#password-strength-text {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.password-strength-indicator {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 2.25rem;
+}
+
+.password-strength-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.password-strength-items li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  color: grey;
+}
+
+.password-strength-items li img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.password-strength-items li svg path {
+  fill: transparent;
+}
+
+.password-strength-items li.rule-passed {
+  color: #151922;
+}
+
+.sr-only {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  padding: 0;
+  margin: -3px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
