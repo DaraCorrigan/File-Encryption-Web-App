@@ -21,32 +21,32 @@
     <div class="login-body">
         <div class="login-popup-container">
             <div class="form-box login">
-                <form action="">
+                <form action="assets/php/login.php" method="POST">
                     <h1>Login</h1>
                     <div class="input-box">
-                        <input type="email" placeholder="email" id="login-email" required>
+                        <input type="text" name="username" placeholder="username" required>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="password" id="login-password" required>
+                        <input type="password" name="password" placeholder="password" required>
                         <i class='bx bxs-lock-alt'></i>
                     </div>
-                    <button type="submit" id="login-submit" class="submit-login-button">Login</button>
+                    <button type="submit" class="submit-login-button">Login</button>
                 </form>
             </div>
 
             <div class="form-box sign-up">
-                <form action="">
+                <form action="assets/php/register.php" method="POST">
                     <h1>Sign Up</h1>
                     <div class="input-box">
-                        <input type="email" placeholder="email" id="sign-up-email" required>
+                        <input type="text" name="username" placeholder="username" required>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="password" id="sign-up-password" required>
+                        <input type="password" name="password" placeholder="password" required>
                         <i class='bx bxs-lock-alt'></i>
                     </div>
-                    <button type="submit" id="sign-up-submit" class="submit-login-button">Sign Up</button>
+                    <button type="submit" class="submit-login-button">Sign Up</button>
                 </form>
             </div>
 
@@ -149,7 +149,7 @@
         </div>
         <div class="navigation-menu-user-profile">
             <div class="profile-picture-wrapper">
-                <img class="profile-picture" src="assets/images/user.jpg" alt="User Profile Picture">
+                <img class="profile-picture" src="assets/images/user.png" alt="User Profile Picture">
                 <div class="status"></div>
             </div>
             <div id="hide-profile">
@@ -342,19 +342,14 @@
     </div>
 
     <script src="assets/js/login-popup.js"></script>
-    <script type="module" src="assets/js/register.js" defer></script>
-    <script type="module" src="assets/js/login.js" defer></script>
-    <script src="assets/js/logout.js"></script>
     <script src="assets/js/expand-nav.js"></script>
     <script src="assets/js/navigation-links.js"></script>
     <script src="assets/js/encryption.js"></script>
-    <script src="assets/js/password-manager.js"></script>
     <script src="assets/js/password-generator.js"></script>
     <script src="assets/js/password-validator.js"></script>
-    <script src="assets/js/firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
+    <script src="assets/js/password-manager.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script src="assets/js/session-status.js"></script>
 </body>
 
 </html>
