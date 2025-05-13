@@ -88,7 +88,3 @@ document.addEventListener("DOMContentLoaded", () => {
         strengthIndicatorText.style.color = strengthClasses[level].color;
     }
 });
-
-
-
-
