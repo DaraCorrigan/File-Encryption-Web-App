@@ -35,6 +35,15 @@ button {
   display: none;
 }
 
+.visible {
+  display: flex;
+}
+
+.navigation-menu,
+.main-container {
+  display: none;
+}
+
 /* Login / Sign Up Popup */
 
 .login-body {
@@ -291,7 +300,6 @@ button {
     user-select: none;
     max-width: 18rem;
     min-width: 4.5rem;
-    display: flex;
     color: white;
     border: 1px solid #252C36;
     flex-direction: column;
