@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
+        $_SESSION['userID'] = $user['userID'];
 
         echo json_encode(['success' => true, 'message' => 'Login successful.']);
         exit;
