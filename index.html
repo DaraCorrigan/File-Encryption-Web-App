@@ -70,7 +70,7 @@
         <div class="navigation-menu-top-wrapper">
             <div class="navigation-menu-top">
                 <a href="#" class="logo-wrapper">
-                    <img src="assets/images/4.svg" alt="Logo" class="logo">
+                    <img src="assets/images/4.svg" alt="Secure Locker Logo" class="logo">
                     <span class="app-name">Secure Locker</span>
                 </a>
             </div>
@@ -173,7 +173,7 @@
         <!-- File Encryption -->
         <section id="file-encryption" class="hidden">
             <form class="file-drop" action="assets/php/encryption.php" method="post" enctype="multipart/form-data">
-                <h2>Upload Your File</h2>
+                <h2>Encrypt Your File</h2>
                 <p>Click to upload or drag and drop your file</p>
 
                 <div class="file-drop-area">
@@ -229,6 +229,63 @@
 
             </form>
         </section>
+
+        <!-- File Decryption -->
+        <section id="file-decryption" class="hidden">
+    <form class="file-drop" action="assets/php/decryption.php" method="post" enctype="multipart/form-data">
+        <h2>Decrypt Your File</h2>
+        <p>Click to upload or drag and drop your file</p>
+
+        <div class="file-drop-area">
+            <div class="upload-file-icon">
+                <i class="fa-solid fa-upload"></i>
+            </div>
+            <input type="file" required id="upload-file" name="uploaded-file" accepts="image/*">
+            <p class="file-information">No Files Selected</p>
+        </div>
+
+        <div class="file-drop-description">
+            <span>Select the encryption method that was used to encrypt your file</span>
+            <span>Max file size: 250MB</span>
+        </div>
+
+        <div class="file-drop-actions">
+            <div class="decryption-menu">
+                <div class="decryption-drop-down-button" onclick="toggleDecryptionDropdown()">
+                    <span class="select-button-text decryption-drop-down-text">Choose your decryption method</span>
+                    <i class="bx bx-chevron-down"></i>
+                </div>
+
+                <ul class="decryption-selections">
+                    <li class="selection" onclick="setDecryptionMethod('aes-256-cbc')">
+                        <span class="selection-text">AES-256</span>
+                    </li>
+                    <li class="selection" onclick="setDecryptionMethod('aes-128-cbc')">
+                        <span class="selection-text">AES-128</span>
+                    </li>
+                    <li class="selection" onclick="setDecryptionMethod('des-ede3-cbc')">
+                        <span class="selection-text">Triple DES</span>
+                    </li>
+                    <li class="selection" onclick="setDecryptionMethod('bf-cbc')">
+                        <span class="selection-text">Blowfish</span>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="hidden" id="decryption-method" name="decryption-method" value="aes-256-cbc">
+
+            <div class="action-buttons">
+                <button type="reset">
+                    Cancel
+                </button>
+
+                <button id="submit" type="submit">
+                    Decrypt
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
 
         <!-- Password Manager -->
         <section id="password-manager" class="password-manager-body hidden">
@@ -345,6 +402,7 @@
     <script src="assets/js/expand-nav.js"></script>
     <script src="assets/js/navigation-links.js"></script>
     <script src="assets/js/encryption.js"></script>
+    <script src="assets/js/decryption.js"></script>
     <script src="assets/js/password-generator.js"></script>
     <script src="assets/js/password-validator.js"></script>
     <script src="assets/js/password-manager.js"></script>
